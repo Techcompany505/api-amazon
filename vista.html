@@ -1,1 +1,15 @@
+<!-- Views/Home/Index.cshtml -->
+@model AwsCredentials
 
+<form asp-action="LoadReports" method="post">
+    <label>Access Key</label>
+    <input type="text" name="AccessKey" class="form-control" required />
+    
+    <label>Secret Key</label>
+    <input type="password" name="SecretKey" class="form-control" required />
+
+    <label>Region</label>
+    <input type="text" name="Region" class="form-control" value="us-east-1" required />
+
+    <button type="submit" class="btn btn-primary mt-3">Cargar Reportes</button>
+</form>
